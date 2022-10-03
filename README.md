@@ -21,3 +21,4 @@
 After installation of mysql-client, go to database server and configure:
 
 `sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf`
+
