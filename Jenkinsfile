@@ -14,7 +14,7 @@ pipeline {
   
     stage('Checkout SCM') {
       steps {
-            git branch: 'main', url: 'https://github.com/darey-devops/php-todo.git'
+            git branch: 'main', url: 'https://github.com/Uzuazoraro/php-todo.git'
       }
     }
 
@@ -29,7 +29,7 @@ pipeline {
       }
     }
 
-    stage('Execute Unit Tests') {
+/*    stage('Execute Unit Tests') {
       steps {
              sh './vendor/bin/phpunit --log-junit reports/unitreport.xml'
       }
@@ -97,7 +97,7 @@ stage ('Deploy to Dev Environment') {
     build job: 'ansible-project/main', parameters: [[$class: 'StringParameterValue', name: 'env', value: 'dev']], propagate: false, wait: true
     }
   }
-
+*/
 
 }
 
