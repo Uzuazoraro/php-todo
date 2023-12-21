@@ -14,7 +14,7 @@ pipeline {
   
     stage('Checkout SCM') {
       steps {
-            git branch: 'main', url: 'https://github.com/Uzuazoraro/php-todo.git'
+            git branch: 'feature/ci-pipeline', credentialsId: 'artifactory', url: 'https://github.com/Uzuazoraro/php-todo'
       }
     }
 
