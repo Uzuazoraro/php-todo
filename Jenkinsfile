@@ -29,14 +29,14 @@ pipeline {
       }
     }
 
-/*    stage('Execute Unit Tests') {
+    stage('Execute Unit Tests') {
       steps {
              sh './vendor/bin/phpunit --log-junit reports/unitreport.xml'
       }
     }
 
 
-    stage('Publish & Plot Code Coverage Report') {
+/*    stage('Publish & Plot Code Coverage Report') {
       steps {
             sh 'phploc app/ --log-csv build/logs/phploc.csv'
 
