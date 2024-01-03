@@ -35,6 +35,11 @@ pipeline {
       }
     }
 
+    stage('Code Analysis') {
+          steps {
+             sh 'phploc app/ --log-csv build/logs/phploc.csv'
+     }
+    }
 
 /*    stage('Publish & Plot Code Coverage Report') {
       steps {
