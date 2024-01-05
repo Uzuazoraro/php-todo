@@ -41,7 +41,7 @@ pipeline {
      }
     }
 
-/*    stage('Publish & Plot Code Coverage Report') {
+    stage('Publish & Plot Code Coverage Report') {
       steps {
             sh 'phploc app/ --log-csv build/logs/phploc.csv'
 
@@ -60,7 +60,7 @@ pipeline {
 
       }
     }
-
+/*
     stage('SonarQube Quality Gate') {
       when { branch pattern: "^develop*|^hotfix*|^release*|^main*", comparator: "REGEXP"}
         environment {
