@@ -79,7 +79,7 @@ pipeline {
     }
   
 }
-/*
+
     stage('SonarQube Quality Gate') {
       when { branch pattern: "^develop*|^hotfix*|^release*|^main*", comparator: "REGEXP"}
         environment {
@@ -104,7 +104,7 @@ stage ('Deploy to Dev Environment') {
     build job: 'ansible-project/main', parameters: [[$class: 'StringParameterValue', name: 'env', value: 'dev']], propagate: false, wait: true
     }
   }
-*/
+
 
 }
 
